@@ -26,7 +26,7 @@ export default function Header() {
       setHeader(window.screenY > 40);
 
       // search
-      setSearchActive(window.screenY > 800);
+      setSearchActive(window.screenY>800)
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -37,7 +37,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div
+    <header
       className={`${
         header ? "bg-white shadow-md py-2" : "bg-transparent shadow-none py-4"
       }
@@ -94,7 +94,7 @@ export default function Header() {
           </Link>
           <Link
             className="cursor-pointer"
-            href="about"
+            href="#about"
             // smooth={desktopMode}
             // spy={true}
             // activeClass="active"
@@ -131,6 +131,6 @@ export default function Header() {
           <SearchMobile />
         </nav>
       </div>
-    </div>
+    </header>
   );
 }
