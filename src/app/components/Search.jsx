@@ -30,7 +30,7 @@ export default function Search() {
           <button
             className={`${
               searchActive ? "btn-sm xl:w-[164px]" : "btn-lg xl:w-[184px]"
-            } btn btn-accent`}
+            } btn btn-accent hover:bg-accent-hover`}
           >
             Search
           </button>

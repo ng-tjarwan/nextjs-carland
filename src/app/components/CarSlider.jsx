@@ -207,7 +207,9 @@ export default function CarSlider() {
                     );
                   })}
                 </div>
-                <button className="btn btn-accent btn-lg">See Details</button>
+                <button className="btn btn-accent hover:bg-accent-hover btn-lg">
+                  See Details
+                </button>
               </div>
             </SwiperSlide>
           );
