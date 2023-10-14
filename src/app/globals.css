@@ -34,7 +34,7 @@
     @apply h-16;
   }
   .btn-cta {
-    @apply bg-primary h-[54px] rounder-[5px] px-4 transition-all duration-300;
+    @apply bg-primary h-[54px] rounded-[5px] px-4 transition-all duration-300;
   }
   .btn-primary {
     @apply bg-primary;
