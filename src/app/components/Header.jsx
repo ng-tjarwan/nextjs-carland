@@ -26,7 +26,7 @@ export default function Header() {
       setHeader(window.screenY > 40);
 
       // search
-      setSearchActive(window.screenY>800)
+      setSearchActive(window.screenY > 800);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -34,7 +34,7 @@ export default function Header() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [setSearchActive]);
 
   return (
     <header
