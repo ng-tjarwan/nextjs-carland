@@ -19,8 +19,8 @@ export default function Home() {
       <Testimonial />
       <CTA />
       <Footer />
-      {/*<BackToTopBtn /> */}
-      <div className="h-[4000px]"></div>
+      <BackToTopBtn />
+      {/* <div className="h-[4000px]"></div> */}
     </main>
   );
 }

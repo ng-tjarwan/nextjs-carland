@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
@@ -9,6 +8,9 @@ import { BiX, BiMenuAltRight } from "react-icons/bi";
 
 import SearchMobile from "./SearchMobile";
 import { SearchContext } from "../context/Search";
+
+// link / react scroll
+import { Link } from "react-scroll";
 
 export default function Header() {
   const [header, setHeader] = useState(false);
@@ -47,9 +49,9 @@ export default function Header() {
         <div className="flex justify-between items-center px-4">
           {/* Logo */}
           <Link
-            href="home"
-            // smooth={desktopMode}
-            // spy={true}
+            to="home"
+            smooth={desktopMode}
+            spy={true}
             className="cursor-pointer"
           >
             <Image src={"/icons/logo.svg"} width={194} height={64} alt="" />
@@ -76,55 +78,55 @@ export default function Header() {
         >
           <Link
             className="cursor-pointer"
-            href="home"
-            // smooth={desktopMode}
-            // spy={true}
-            // activeClass="active"
+            to="home"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
           >
             Home
           </Link>
           <Link
             className="cursor-pointer"
-            href="cars"
-            // smooth={desktopMode}
-            // spy={true}
-            // activeClass="active"
+            to="cars"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
           >
             Cars
           </Link>
           <Link
             className="cursor-pointer"
-            href="#about"
-            // smooth={desktopMode}
-            // spy={true}
-            // activeClass="active"
+            to="about"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
           >
             About
           </Link>
           <Link
             className="cursor-pointer"
-            href="testimonials"
-            // smooth={desktopMode}
-            // spy={true}
-            // activeClass="active"
+            to="testimonial"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
           >
             Testimonials
           </Link>
           <Link
             className="cursor-pointer"
-            href="contact"
-            // smooth={desktopMode}
-            // spy={true}
-            // activeClass="active"
+            to="contact"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
           >
             Contact
           </Link>
           <Link
             className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
-            href="/"
-            // smooth={desktopMode}
-            // spy={true}
-            // activeClass="active"
+            to="/"
+            smooth={desktopMode}
+            spy={true}
+            activeClass="active"
           >
             See all cars
           </Link>
