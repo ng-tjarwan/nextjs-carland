@@ -30,7 +30,7 @@ export default function About() {
   return (
     <section className="section flex items-center" id="about" ref={ref}>
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row xl:justify-between">
+        <div className="flex flex-col items-center xl:flex-row xl:justify-between">
           {/* image */}
           <motion.div
             variants={fadeIn("up", 0.2)}

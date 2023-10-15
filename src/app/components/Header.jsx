@@ -25,10 +25,10 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       // header
-      setHeader(window.screenY > 40);
+      setHeader(window.scrollY > 40);
 
       // search
-      setSearchActive(window.screenY > 800);
+      setSearchActive(window.scrollY > 800);
     };
 
     window.addEventListener("scroll", handleScroll);
